@@ -429,7 +429,7 @@ class Main extends PluginBase implements Listener
                                 $account = $sender->getName();
                                 $payto = $args[2];
                                 $currency = $args[0];
-                                if (is_numeric ($args[0])) {
+                                if (is_numeric ($args[1])) {
                                 if ($this->getCurrency($currency)) {
                                     if ($this->getAccount($currency, $account)) {
                                         if ($this->getAccount($currency, $payto)) {
