@@ -1,0 +1,51 @@
+name: FlameEco
+main: MCBPlugins\FlameEco\Main
+version: 1.0.0
+api: [3.14.2]
+load: POSTWORLD
+author: MCBPlugins
+description: Custom currency for your economy!
+
+commands:
+ ecocreate:
+  description: Create your currency!
+  permission: eco.admin
+ currencysymbol:
+  description: Update a currency symbol!
+  permission: eco.admin
+ ecodel:
+  description: Delete currency!
+  permission: eco.admin
+ ecocreateaccount:
+  description: Register a eco account!
+  permission: eco.default
+  aliases: [ecoca]
+ setmoney:
+  description: Set money to an account!
+  permission: eco.admin
+ addmoney:
+  description: Add money to an account!
+  permission: eco.admin
+ takemoney:
+  description: Take money from an account!
+  permission: eco.admin
+ mymoney:
+  description: Check your money!
+  permission: eco.default
+ seemoney:
+  description: Check someone's money!
+  permission: eco.default
+ topmoney:
+  description: Check top money owners!
+  permission: eco.default
+ pay:
+  description: Pay someone money!
+  permission: eco.default
+
+permissions:
+  eco.admin:
+    default: op
+    description: Let's you use admin commands!
+  eco.default:
+    default: true
+    description: Let's you use default commands!
