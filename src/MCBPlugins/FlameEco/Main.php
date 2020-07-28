@@ -434,7 +434,7 @@ class Main extends PluginBase implements Listener
                                     if ($this->getAccount($currency, $account)) {
                                         if ($this->getAccount($currency, $payto)) {
                                             $budget = $args[1];
-                                            if ($this->getPlayerMoney($currency, $account) == $budget) {
+                                            if ($this->getPlayerMoney($currency, $account) >= $budget) {
                                                 $this->payMoney($currency, $account, $payto, $budget);
                                                 $symbol = $this->getSymbol($currency);
                                                 $sender->sendMessage(TextFormat::YELLOW . "You have paid $symbol$budget to $account's account!");
