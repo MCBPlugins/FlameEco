@@ -1,7 +1,7 @@
 name: FlameEco
 main: MCBPlugins\FlameEco\Main
 version: 1.0.0
-api: [3.14.2]
+api: [3.17.0]
 load: POSTWORLD
 author: MCBPlugins
 description: Custom currency for your economy!
